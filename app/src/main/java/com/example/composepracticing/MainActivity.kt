@@ -1,12 +1,8 @@
 package com.example.composepracticing
 
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.animateDpAsState
-import androidx.compose.animation.core.spring
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -71,7 +67,6 @@ fun OnBoardingScreen(
 
 @Preview(
     showBackground = true, widthDp = 320, heightDp = 320,
-    uiMode = UI_MODE_NIGHT_YES
 )
 @Composable
 fun OnBoardingPreview() {
@@ -129,7 +124,7 @@ fun CardContent(name: String, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
+@Preview()
 @Composable
 fun MyAppPreview() {
     ComposePracticingTheme {
